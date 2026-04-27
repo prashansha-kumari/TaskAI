@@ -7,8 +7,6 @@ const taskRoutes = require("./routes/taskRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 
-
-
 const app = express();
 
 // Middlewares
@@ -25,7 +23,6 @@ app.use("/api", protectedRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/notes", noteRoutes);
 app.use("/api/ai", aiRoutes);
-
 
 
 module.exports = app;
