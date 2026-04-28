@@ -10,7 +10,7 @@
 
 The app combines **task management + note-taking + AI assistance** to create a complete productivity system.
 
-Modern productivity tools increasingly use AI for **task planning, organization, and decision-making**, making workflows faster and more efficient ([Udemy Blog][1]). TaskAI follows the same approach by integrating AI directly into the workflow.
+Modern productivity tools increasingly use AI for **task planning, organization, and decision-making**, making workflows faster and more efficient. TaskAI follows the same approach by integrating AI directly into the workflow.
 
 ---
 
