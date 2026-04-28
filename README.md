@@ -112,7 +112,18 @@ User → Frontend (React) → Backend (Express API) → Database (MongoDB) → A
 
 ## 📷 Screenshots
 
-*Add screenshots here (Dashboard, Login, AI Assistant, etc.)*
+### 🏠 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### 🔐 Login Page
+![Login](./screenshots/login.png)
+
+### ✅ Tasks
+![Tasks](./screenshots/tasks.png)
+
+### 🤖 AI Assistant
+![AI](./screenshots/ai.png)
+
 
 ---
 
