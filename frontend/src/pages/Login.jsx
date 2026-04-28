@@ -7,10 +7,13 @@ function Login({ setPage }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://taskai-backend-lsyq.onrender.com/api/auth/login",
+        {
+          email,
+          password,
+        },
+      );
 
       localStorage.setItem("token", res.data.token);
       setPage("dashboard");
@@ -20,21 +23,22 @@ function Login({ setPage }) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center 
-    bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]">
-
+    <div
+      className="min-h-screen flex items-center justify-center 
+    bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]"
+    >
       {/* GLASS CARD */}
-      <div className="w-96 p-8 rounded-2xl 
+      <div
+        className="w-96 p-8 rounded-2xl 
       bg-white/5 backdrop-blur-xl 
       border border-white/20 
-      shadow-[0_0_40px_rgba(128,0,255,0.3)]">
-
+      shadow-[0_0_40px_rgba(128,0,255,0.3)]"
+      >
         <h2 className="text-2xl font-semibold text-center text-white mb-6">
           Welcome Back 👋
         </h2>
 
         <div className="flex flex-col gap-4">
-
           <input
             type="email"
             placeholder="Email address"
@@ -65,7 +69,6 @@ function Login({ setPage }) {
           >
             Login
           </button>
-
         </div>
 
         <p className="text-sm text-center text-gray-300 mt-5">
@@ -77,7 +80,6 @@ function Login({ setPage }) {
             Sign up
           </span>
         </p>
-
       </div>
     </div>
   );
